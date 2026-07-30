@@ -26,6 +26,7 @@
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#credentials">Credentials</a>
+        <a href="#documents">Documents</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
@@ -44,7 +45,7 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">Let’s Connect</a>
-            <a class="btn btn-secondary" href="assets/Majed-Muhammed-Rashad-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn-secondary" href="assets/docs/Majed-Muhammed-Rashad-CV.pdf" target="_blank" rel="noopener">Download CV</a>
           </div>
           <ul class="quick-facts">
             <li><strong>Location:</strong> Sharafia, Jeddah, Saudi Arabia</li>
@@ -259,6 +260,36 @@
             <p>English — Excellent</p>
             <p>Driving License — Valid</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="documents" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Documents</p>
+          <h3>Certificates &amp; Credentials</h3>
+        </div>
+        <div class="doc-viewer card">
+          <div class="doc-tabs" role="tablist">
+            <button class="doc-tab is-active" type="button" role="tab" aria-selected="true"
+              data-src="assets/docs/Majed-Muhammed-Rashad-CV.pdf" data-label="CV">CV</button>
+            <button class="doc-tab" type="button" role="tab" aria-selected="false"
+              data-src="assets/docs/Majed__cover_letter.pdf" data-label="Cover Letter">Cover Letter</button>
+            <button class="doc-tab" type="button" role="tab" aria-selected="false"
+              data-src="assets/docs/ACCA-Diploma-Certificate.pdf" data-label="ACCA Diploma Certificate">ACCA Diploma Certificate</button>
+            <button class="doc-tab" type="button" role="tab" aria-selected="false"
+              data-src="assets/docs/ACCA-Exam-History.pdf" data-label="ACCA Exam History">ACCA Exam History</button>
+            <button class="doc-tab" type="button" role="tab" aria-selected="false"
+              data-src="assets/docs/FACS-CPA-Evaluation.pdf" data-label="FACS CPA Evaluation (CPA Equivalency)">FACS CPA Evaluation</button>
+          </div>
+          <div class="doc-frame-wrap">
+            <iframe id="docFrame" class="doc-frame" src="assets/docs/Majed-Muhammed-Rashad-CV.pdf" title="CV preview" loading="lazy"></iframe>
+          </div>
+          <div class="doc-actions">
+            <span id="docCurrentLabel" class="doc-current-label">Viewing: CV</span>
+            <a id="docDownload" class="btn btn-secondary" href="assets/docs/Majed-Muhammed-Rashad-CV.pdf" download>Download this document</a>
+          </div>
         </div>
       </div>
     </section>

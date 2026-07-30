@@ -348,6 +348,107 @@ img {
   margin-bottom: 8px;
 }
 
+.doc-viewer {
+  padding: 24px;
+}
+
+.doc-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.doc-tab {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: 0.25s ease;
+}
+
+.doc-tab:hover {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.doc-tab.is-active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #131313;
+}
+
+.doc-frame-wrap {
+  background: #0a1524;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 75vh;
+}
+
+.doc-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+}
+
+.doc-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.doc-current-label {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 780px) {
+  .doc-frame-wrap {
+    height: 60vh;
+  }
+  .doc-viewer {
+    padding: 18px;
+  }
+  .doc-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    padding-bottom: 6px;
+    margin: 0 -18px 16px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .doc-tab {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    white-space: nowrap;
+    font-size: 12.5px;
+    padding: 9px 13px;
+  }
+  .doc-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .doc-actions .btn {
+    width: 100%;
+  }
+  .doc-current-label {
+    text-align: center;
+    order: 2;
+  }
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -458,5 +559,17 @@ img {
   }
   .stat-grid {
     grid-template-columns: 1fr;
+  }
+  .doc-frame-wrap {
+    height: 52vh;
+    border-radius: 12px;
+  }
+  .doc-viewer {
+    padding: 14px;
+  }
+  .doc-tabs {
+    margin: 0 -14px 14px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }
